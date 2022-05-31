@@ -1,0 +1,51 @@
+export const getLocation = function() {
+	return new Promise((resolve, reject) => {
+		uni.getLocation({
+			type: 'gcj02',
+			success: (res) => {
+				resolve(res)
+			},
+			fail: (e) => {
+				console.log(e)
+			}
+		});
+	})
+}
+
+ /**
+   * @param permission 详见 https://uniapp.dcloud.io/api/other/authorize
+   */
+export const getAuthorize = (permission) => {
+	return new Promise((resolve, reject) => {
+		uni.authorize({
+		    scope: permission,
+		    success() {
+				resolve()
+		    },
+			fail() {
+				reject()
+			}
+		})
+	})
+}
+
+export const dateFormat = (fmt, value) => {
+    let ret;
+	let date = new Date(value)
+    const opt = {
+        "Y+": date.getFullYear().toString(),        // 年
+        "m+": (date.getMonth() + 1).toString(),     // 月
+        "d+": date.getDate().toString(),            // 日
+        "H+": date.getHours().toString(),           // 时
+        "M+": date.getMinutes().toString(),         // 分
+        "S+": date.getSeconds().toString()          // 秒
+        // 有其他格式化字符需求可以继续添加，必须转化成字符串
+    };
+    for (let k in opt) {
+        ret = new RegExp("(" + k + ")").exec(fmt);
+        if (ret) {
+            fmt = fmt.replace(ret[1], (ret[1].length == 1) ? (opt[k]) : (opt[k].padStart(ret[1].length, "0")))
+        };
+    };
+    return fmt;
+}

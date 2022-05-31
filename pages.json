@@ -1,0 +1,425 @@
+{
+	"easycom":{
+	       "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	   },
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		// #ifdef MP-WEIXIN
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		// #endif
+		
+		{
+		    "path": "pages/index/index",
+			"style": {
+			"navigationBarTitleText": "洗车E族",
+			"app-plus": {
+				"bounce": "vertical",
+				"titleNView": false
+			}
+			
+			}
+		
+		},
+	
+	    {
+            "path" : "pages/kuaixi/kuaixi",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "e族商城",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#f6092a",
+				"navigationBarTextStyle":"white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/order",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "订单",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor":"#24c06a",
+				"navigationBarTextStyle":"white"
+				
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle":"custom",
+				"navigationBarTextStyle":"white",
+				"backgroundColor":"#019177",
+				"backgroundTextStyle":"light"
+            }
+			
+            
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/choose_city/choose_city",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/pay/pay",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"app-plus":{
+					"titleNView":{
+						"buttons":[
+							{
+								"color":"#0000ff",
+								"text":"查看订单",
+								"float":"right",
+								"colorPressed":"#f1f1f1",
+								"fontSize":"14px",
+								"width":"80px"
+								
+								
+							}
+							
+						]
+					}
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/coupons/coupons",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/order_detail/order_detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/setting/setting",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/login_sms/login_sms",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/weixin_config/weixin_config",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/pay/pay_result/pay_result",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/order/pinglun/pinglun",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/watcher/watcher",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/dingwei/dingwei",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/tuanti/tuanti",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/share/share",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/dingwei/choose-car/choose-car",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/dingwei/choose-coupon/choose-coupon",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/system_sms/system_sms",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/watcher-shenhe/watcher-shenhe",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/watcher-shenhe/shenhe/shenhe",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/dating/dating",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/dalishang/dalishang",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/mannage-watcher/mannage-watcher",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/yeji/yeji",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/bangding/bangding",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/fengongsi/fengongsi",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/fengongsi/area/area",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/fengongsi/kaifang/kaifang",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/fengongsi/area/shequ/shequ",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/fengongsi/area/shequ/street/street",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/fengongsi/area/shequ/street/watchers/watchers",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/fengongsi/area/shequ/street/watchers/watcher_detail/watcher_detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/fengongsi/area/add/add",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"app-plus": {
+		"runmode" : "liberate"
+	},
+	"tabBar": {
+		"color":"#777777",
+		"selectedColor":"#00C265",
+		"borderStyle":"white",
+		"backgroundColor":"#FFFFFF",
+		"fontSize": "12px",
+		"iconWidth": "24px",
+		"spacing": "4px",
+		"height": "60px",
+		
+		"list": [
+			// {
+			// 	"pagePath": "pages/index2/index2",
+			// 	"text": "星节点",
+			// 	"iconPath": "static/foot/jiedian.png",
+			// 	"selectedIconPath": "static/foot/jiedian3.png"
+			// },
+			{
+				"pagePath": "pages/index/index",
+				"text": "洗车",
+				"iconPath": "static/icon/index.png",
+				"selectedIconPath": "static/icon/index1.png"
+			},
+			{
+				"pagePath":"pages/kuaixi/kuaixi",
+				"text":"商城",
+				"iconPath":"static/icon/shop1.png",
+				"selectedIconPath":"static/icon/shop.png"
+			},
+			{
+				"pagePath":"pages/order/order",
+				"text":"订单",
+				"iconPath":"static/icon/order.png",
+				"selectedIconPath":"static/icon/order1.png"
+			},
+			{
+			"pagePath":"pages/my/my",
+			"text":"我的",
+			"iconPath":"static/icon/my.png",
+			"selectedIconPath":"static/icon/my1.png"
+			}
+		
+		]
+	}
+}
